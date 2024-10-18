@@ -16,11 +16,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - run: |
-          pwd
-          ls -lah
-        working-directory: ./k8s
-
       - uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
